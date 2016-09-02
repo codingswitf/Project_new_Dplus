@@ -9,7 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT * FROM `register` LIMIT 0, 30 ";
+$sql = "SELECT * FROM `register_insuren` LIMIT 0, 30 ";
 $conn->query("SET names utf8");
 $myArray = array();
 $result = $conn->query($sql);
