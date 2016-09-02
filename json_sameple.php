@@ -23,8 +23,7 @@ $address = "address";
 $city = "city";
 $postal_code = "postal_code";
 $phone = "phone";
-$sql = "INSERT INTO  `sql6117117`.`register_insuren` (`id` ,`email` ,`First_name` ,`last_name` ,`address` ,`city` ,`postal_code` ,`phone`)
-VALUES (NULL ,  '+$email+',  '+$First_name+',  '+$last_name+',  '+$address+',  '+$city+',  '+$postal_cod+',  '+phone+');"
+$sql = "INSERT INTO  `sql6117117`.`register_insuren` (`email` ,`First_name` ,`last_name` ,`address` ,`city` ,`postal_code` ,`phone`) VALUES ('+$email+',  '+$First_name+',  '+$last_name+',  '+$address+',  '+$city+',  '+$postal_cod+',  '+$phone+');"
 
 $conn->query("SET names utf8");
 $result = $conn->query($sql);
